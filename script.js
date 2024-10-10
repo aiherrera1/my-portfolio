@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       {
         id: "capstone",
-        en: "Especialty Project",
+        en: "Capstone: Especialty Project",
         es: "Proyecto de Especialidad",
       },
       {
@@ -268,3 +268,5 @@ document.addEventListener("DOMContentLoaded", () => {
     languageToggleBtn.textContent = isSpanish ? "English" : "Español";
   }
 });
+
+}
