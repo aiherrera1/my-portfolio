@@ -1,4 +1,3 @@
-// Run the script only after the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
   const themeToggleBtn = document.getElementById("theme-toggle");
   const languageToggleBtn = document.getElementById("language-toggle");
@@ -147,8 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       {
         id: "lolocar-title",
-        en: "Software Engineering Intern - LOLOCAR.COM, Santiago, Chile",
-        es: "Desarrollador Practicante - LOLOCAR.COM, Santiago, Chile",
+        en: "Software Engineering Intern - Lolocar.com, Santiago, Chile",
+        es: "Desarrollador Practicante - Lolocar.com, Santiago, Chile",
       },
       {
         id: "lolocar-li-1",
@@ -268,4 +267,3 @@ document.addEventListener("DOMContentLoaded", () => {
     languageToggleBtn.textContent = isSpanish ? "English" : "Español";
   }
 });
-}
