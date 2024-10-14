@@ -1,0 +1,47 @@
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode header {
+  background-color: #444;
+}
+
+body.dark-mode nav ul li a {
+  color: #ddd;
+}
+
+body.dark-mode nav ul li a:hover {
+  color: #00bfa5;
+}
+
+body.dark-mode .projects p,
+body.dark-mode .projects h3 {
+  color: #222;
+}
+
+body.dark-mode .hero {
+  background: linear-gradient(135deg, #444, #666);
+}
+
+body.dark-mode .project-section-all,
+body.dark-mode .about,
+body.dark-mode .education,
+body.dark-mode .coursework,
+body.dark-mode .experience,
+body.dark-mode .skills,
+body.dark-mode .resume,
+body.dark-mode .contact {
+  background-color: #333;
+  border-color: #555;
+}
+
+body.dark-mode footer {
+  background-color: #444;
+}
+
+body.dark-mode .arrow {
+  background-color: #333;
+  color: #fff;
+}

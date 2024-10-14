@@ -147,8 +147,8 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       {
         id: "lolocar-title",
-        en: "Software Engineering Intern - LOLOCAR.CL, Santiago, Chile",
-        es: "Desarrollador Practicante - LOLOCAR.CL, Santiago, Chile",
+        en: "Software Engineering Intern - LOLOCAR.COM, Santiago, Chile",
+        es: "Desarrollador Practicante - LOLOCAR.COM, Santiago, Chile",
       },
       {
         id: "lolocar-li-1",
@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       {
         id: "ruuf-description",
-        en: "Developed a full-stack application for Ruff to monitor and analyze energy usage. Served as backend administrator, managing server-side logic and database integration.",
+        en: "Developed a full-stack application for Ruuf to monitor and analyze energy usage. Served as backend administrator, managing server-side logic and database integration.",
         es: "Desarrollé una aplicación full-stack para Ruuf para monitorear y analizar el uso de energía. Actué como administrador de backend, gestionando la lógica del servidor y la integración de la base de datos.",
       },
       {
@@ -268,5 +268,4 @@ document.addEventListener("DOMContentLoaded", () => {
     languageToggleBtn.textContent = isSpanish ? "English" : "Español";
   }
 });
-
 }
