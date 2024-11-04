@@ -3,243 +3,390 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Agustin</title>
-    <link rel="stylesheet" href="dark-mode.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio - Agustin Herrera</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <h1 id="portfolio-title">Agustin's Portfolio</h1>
-        <div class="nav-links">
-          <ul>
-            <li><a href="#about" id="about-link">About Me</a></li>
-            <li><a href="#education" id="education-link">Education</a></li>
-            <li><a href="#projects" id="projects-link">Projects</a></li>
-            <li><a href="#experience" id="experience-link">Experience</a></li>
-            <li><a href="#skills" id="skills-link">Skills</a></li>
-            <li><a href="#coursework" id="coursework-link">Coursework</a></li>
-            <li><a href="#contact" id="contact-link">Contact</a></li>
-          </ul>
-          <div class="toggle-buttons">
-            <button id="theme-toggle">Dark Mode</button>
-            <button id="language-toggle">Español</button>
-            <a
-              href="agustin-herrera-resume-en.pdf"
-              class="bt"
-              id="download-resume"
-              >Download Resume</a
-            >
+    <div class="actions">
+      <button id="language-toggle" aria-label="Change Language">
+        <img
+          id="language-toggle-image"
+          src="assets/img/chile.png"
+          alt="Flag of Chile"
+        />
+      </button>
+    </div>
+    <div class="page">
+      <div class="left">
+        <div class="upper-left">
+          <!-- Hero Section -->
+          <section class="hero">
+            <div class="hero-content">
+              <img
+                src="assets/img/profile.png"
+                alt="Agustin Herrera"
+                id="hero-image"
+              />
+              <h1 id="hero-name">Agustin Herrera</h1>
+
+              <p id="hero-description">
+                Software Engineer with a passion for building web applications
+                and solving complex problems.
+              </p>
+              <div class="hero-links">
+                <div class="media-links">
+                  <a
+                    href="https://github.com/aiherrera1"
+                    target="_blank"
+                    aria-label="GitHub"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/agustin-herrera-r"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="assets/cv/agustin-herrera-resume-en.pdf"
+                    download
+                    aria-label="Download Resume"
+                  >
+                    <i class="fas fa-file-download" alt="hola"></i>
+                  </a>
+                </div>
+                <a href="mailto:aiherrera1@uc.cl" aria-label="Email">
+                  <i class="fas fa-envelope"></i>
+                  <p>aiherrera1@uc.cl</p>
+                </a>
+                <a href="tel:+56968441857" aria-label="Phone">
+                  <i class="fas fa-phone"></i>
+                  <p>+56 9 6844 1857</p>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <div class="left-right">
+            <section id="about" class="about div2">
+              <h2 id="about-title">About Me</h2>
+              <div class="about-content">
+                <p id="about-description">
+                  I’ve been a Linux user for 4 years, and I’m passionate about
+                  open-source software. I love customizing my workflow with Vim
+                  and mechanical keyboards. When I'm not coding, I'm diving deep
+                  into new technologies or optimizing my development
+                  environment.
+                </p>
+              </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="education div3">
+              <h2 id="education-title">Education</h2>
+              <div class="education-item">
+                <h3 id="university-name">
+                  Pontificia Universidad Católica de Chile
+                </h3>
+                <p id="university-title">
+                  Bachelor in Engineering (Expected Jul 2025)
+                </p>
+                <p id="university-major">Major: Software Engineering</p>
+                <p id="university-minor">
+                  Minor: Scientific and Technological Foundations of Computing
+                </p>
+              </div>
+            </section>
+            <section id="coursework" class="coursework div14">
+              <h2 id="university-classes">Relevant Coursework</h2>
+              <div class="coursework-list">
+                <div id="data-structures-and-algorithm">
+                  Data Structures and Algorithms
+                </div>
+                <div id="operating-systems">Operating Systems & Networks</div>
+                <div id="databases">Database Management Systems</div>
+                <div id="software-engineer">Software Engineering</div>
+                <div id="web">Web Technologies and Applications</div>
+                <div id="software-architecture">
+                  Architecture of Software Systems
+                </div>
+                <div id="computer-architecture">Computer Architecture</div>
+                <div id="distributed-systems">Distributed Systems</div>
+                <div id="advanced-web">Advanced Web Design</div>
+                <div id="recommender-systems">Recommender Systems</div>
+                <div id="vis-info">Visualization of Information</div>
+                <div id="ai">Artificial Intelligence</div>
+                <div id="logic">Logic for Computer Science</div>
+                <div id="automata">Theory of Automata</div>
+                <div id="discrete-math">Discrete Mathematics</div>
+                <div id="testing">Testing</div>
+                <div id="gpti">Information Technology Project Management</div>
+                <div id="capstone">Capstone: Specialty Project</div>
+                <div id="daa">Design and Analysis of Algorithms</div>
+              </div>
+            </section>
           </div>
         </div>
-      </nav>
-    </header>
+        <section id="projects" class="project-section-all div13">
+          <h2 id="projects-title">Projects</h2>
+          <div class="projects">
+            <div class="project-item">
+              <h3 id="ruuf-title">Full-Stack Energy Monitoring App for Ruff</h3>
+              <div class="project-description">
+                <p><strong>Sep 2024</strong></p>
+                <p id="ruuf-description">
+                  Developed a full-stack application for Ruuf to monitor and
+                  analyze energy usage. Served as backend administrator,
+                  managing server-side logic and database integration.
+                </p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://two024-2-s1-grupo3-web.onrender.com"
+                  target="_blank"
+                  class="project-link"
+                  ><i class="fas fa-globe"></i>Live Demo</a
+                >
+              </div>
+            </div>
+            <div class="project-item">
+              <h3 id="recommendation-title">Recommendation Engine</h3>
+              <div class="project-description">
+                <p><strong>May 2024</strong></p>
+                <p id="recommendation-description">
+                  Built a recommendation system using Python and machine
+                  learning to suggest recipes based on user preferences and
+                  dietary needs.
+                </p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/aiherrera1/recommendation-system-for-recipes"
+                  target="_blank"
+                  class="project-link"
+                  ><i class="fab fa-github"></i>GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-item">
+              <h3 id="docker-title">Containerized Application Deployment</h3>
+              <div class="project-description">
+                <p><strong>Jul 2022</strong></p>
+                <p id="docker-description">
+                  Containerized a full-stack application with Docker Compose and
+                  deployed it on AWS, demonstrating scalable deployment and
+                  management of services in a cloud environment.
+                </p>
+              </div>
+              <div class="project-links">
+                <!-- <a href="" target="_blank" class="project-link" -->
+                <!--   ><i class="fab fa-github"></i>GitHub</a -->
+                <!-- > -->
+                <!-- <a href="" target="_blank" class="project-link" -->
+                <!--   ><i class="fas fa-globe"></i>Live Demo</a -->
+                <!-- > -->
+              </div>
+            </div>
+            <div class="project-item">
+              <h3 id="video-game-title">Multiplayer Video Game Development</h3>
+              <div class="project-description">
+                <p><strong>Nov 2022</strong></p>
+                <p id="video-game-description">
+                  Created a multiplayer video game using React for the frontend
+                  and PostgreSQL for backend deployment. Hosted on Heroku and
+                  Netlify for an interactive gaming experience.
+                </p>
+              </div>
+              <div class="project-links">
+                <a href="" target="_blank" class="project-link"
+                  ><i class="fab fa-github"></i>GitHub</a
+                >
+              </div>
+              <!-- <a href="" target="_blank" class="project-link">Live Demo</a> -->
+            </div>
+            <div class="project-item">
+              <h3 id="dccarpool-title">
+                University Car Sharing and Logistics Platform
+              </h3>
+              <div class="project-description">
+                <p><strong>Jul 2021</strong></p>
+                <p id="dccarpool-description">
+                  Developed a Ruby on Rails application to facilitate car
+                  sharing among university students and staff, deployed on
+                  Heroku for reliability and accessibility.
+                </p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/aiherrera1/carpool-rails"
+                  target="_blank"
+                  class="project-link"
+                  ><i class="fab fa-github"></i>GitHub</a
+                >
+                <!-- <a href="" target="_blank" class="project-link" -->
+                <!--   ><i class="fas fa-globe"></i>Live Demo</a -->
+                <!-- > -->
+              </div>
+            </div>
 
-    <section class="hero">
-      <div class="hero-content">
-        <h2 id="hero-title">Hello, I'm Agustín</h2>
-        <p id="hero-description">
-          Software Engineer with a passion for building web applications and
-          solving complex problems.
-        </p>
-        <div class="social-links">
-          <a href="https://linkedin.com/in/agustin-herrera-r" target="_blank"
-            >LinkedIn</a
-          >
-          <a href="https://github.com/aiherrera1" target="_blank">GitHub</a>
-        </div>
-      </div>
-    </section>
+            <div class="project-item">
+              <h3 id="blackjack-cardcounter">Blackjack Card Counter</h3>
+              <div class="project-description">
+                <p><strong>Jul 2020</strong></p>
+                <p id="blackjack-cardcounter-desc">
+                  Created a blackjack card counter using Python and probability
+                  theory to update the perfect play strategy based on the
+                  remaining cards in the deck.
+                </p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/aiherrera1/blackjack-card-counter"
+                  target="_blank"
+                  class="project-link"
+                  ><i class="fab fa-github"></i>GitHub</a
+                >
+              </div>
+            </div>
 
-    <section id="about" class="about">
-      <h2 id="about-title">About Me</h2>
-      <div class="about-content">
-        <p id="about-description">
-          I’ve been a Linux user for 4 years, and I’m passionate about
-          open-source software. I love customizing my workflow with Vim and
-          mechanical keyboards. When I'm not coding, I'm diving deep into new
-          technologies or optimizing my development environment.
-        </p>
-      </div>
-    </section>
-
-    <section id="education" class="education">
-      <h2 id="education-title">Education</h2>
-      <div class="education-item">
-        <h3 id="university-name">
-          Pontificia Universidad Católica de Chile, Santiago, Chile
-        </h3>
-        <p id="university-title">Bachelor in Engineering (Expected Jul 2025)</p>
-        <p id="university-major">Major: Software Engineering</p>
-        <p id="university-minor">
-          Minor: Scientific and Technological Foundations of Computing
-        </p>
-      </div>
-    </section>
-
-    <section id="experience" class="experience">
-      <h2 id="work-experience-title">Work Experience</h2>
-      <div class="job">
-        <h3 id="lolocar-title">
-          Software Engineering Intern - <a href="lolocar.com">Lolocar.com</a>,
-          Santiago, Chile
-        </h3>
-        <p><strong>Aug 2023 – Dec 2023</strong></p>
-        <ul>
-          <li id="lolocar-li-1">
-            Engineered robust and scalable RESTful APIs to accurately compute
-            toll charges owed by renters, ensuring seamless integration with
-            existing systems and improving operational efficiency.
-          </li>
-          <li id="lolocar-li-2">
-            Architected and implemented sophisticated admin panels for internal
-            use, enhancing user experience and enabling real-time data
-            management.
-          </li>
-          <li id="lolocar-li-3">
-            Led deployment of applications on Google Cloud Services, optimizing
-            performance and improving deployment speed and reliability by 20%.
-          </li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3 id="ski-lift-title">Ski Lift Operator - Vail Keystone, CO</h3>
-        <p><strong>Dec – Mar 2021, 2022, 2023</strong></p>
-        <ul>
-          <li id="ski-lift-li-1">
-            Operated and maintained ski lifts during peak winter seasons,
-            ensuring safety and efficiency for thousands of guests daily.
-          </li>
-          <li id="ski-lift-li-2">
-            Provided exceptional guest service, addressing any concerns promptly
-            to enhance the overall resort experience.
-          </li>
-          <li id="ski-lift-li-3">
-            Coordinated with lift operators, maintenance team, and ski patrol to
-            ensure guest safety.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects" class="project-section-all">
-      <h2 id="projects-title">Projects</h2>
-      <div class="projects-section">
-        <div class="projects">
-          <div class="project-item">
-            <h3 id="ruuf-title">Full-Stack Energy Monitoring App for Ruff</h3>
-            <p><strong>Sep 2024</strong></p>
-            <p id="ruuf-description">
-              Developed a full-stack application for Ruuf to monitor and analyze
-              energy usage. Served as backend administrator, managing
-              server-side logic and database integration.
-            </p>
+            <div class="project-item">
+              <h3 id="portfolio-title">Personal Portfolio</h3>
+              <div class="project-description">
+                <p><strong>Nov 2024</strong></p>
+                <p id="portfolio-description">
+                  Designed and developed a personal portfolio to showcase my
+                  projects, skills, and experience. Built with HTML, CSS, and
+                  JavaScript, and hosted in GitHub Pages for ccessible viewing.
+                </p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/aiherrera1/my-portfolio"
+                  target="_blank"
+                  class="project-link"
+                  ><i class="fab fa-github"></i>GitHub</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="project-item">
-            <h3 id="recommendation-title">Recommendation Engine</h3>
-            <p><strong>May 2024</strong></p>
-            <p id="recommendation-description">
-              Built a recommendation system using Python and machine learning to
-              suggest recipes based on user preferences and dietary needs.
-            </p>
-          </div>
-          <div class="project-item">
-            <h3 id="docker-title">Containerized Application Deployment</h3>
-            <p><strong>Jul 2022</strong></p>
-            <p id="docker-description">
-              Containerized a full-stack application with Docker Compose and
-              deployed it on AWS, demonstrating scalable deployment and
-              management of services in a cloud environment.
-            </p>
-          </div>
-          <div class="project-item">
-            <h3 id="video-game-title">Multiplayer Video Game Development</h3>
-            <p><strong>Nov 2022</strong></p>
-            <p id="video-game-description">
-              Created a multiplayer video game using React for the frontend and
-              PostgreSQL for backend deployment. Hosted on Heroku and Netlify
-              for an interactive gaming experience.
-            </p>
-          </div>
-          <div class="project-item">
-            <h3 id="dccarpool-title">
-              University Car Sharing and Logistics Platform
+        </section>
+      </div>
+      <div class="right">
+        <!-- Experience Section -->
+        <section id="experience" class="experience div11">
+          <h2 id="work-experience-title">Work Experience</h2>
+          <div class="job">
+            <h3 id="lolocar-title">
+              Software Engineering Intern -
+              <a href="https://lolocar.com">Lolocar.com</a>, Santiago, Chile
             </h3>
-            <p><strong>Jul 2021</strong></p>
-            <p id="dccarpool-description">
-              Developed a Ruby on Rails application to facilitate car sharing
-              among university students and staff, deployed on Heroku for
-              reliability and accessibility.
+            <p><strong>Aug 2023 – Dec 2023</strong></p>
+            <ul>
+              <li id="lolocar-li-1">
+                Engineered robust and scalable RESTful APIs to accurately
+                compute toll charges owed by renters, ensuring seamless
+                integration with existing systems and improving operational
+                efficiency.
+              </li>
+              <li id="lolocar-li-2">
+                Architected and implemented sophisticated admin panels for
+                internal use, enhancing user experience and enabling real-time
+                data management.
+              </li>
+              <li id="lolocar-li-3">
+                Led deployment of applications on Google Cloud Services,
+                optimizing performance and improving deployment speed and
+                reliability by 20%.
+              </li>
+            </ul>
+          </div>
+          <div class="job">
+            <h3 id="ski-lift-title">Ski Lift Operator - Vail Keystone, CO</h3>
+            <p><strong>Dec – Mar 2021, 2022, 2023</strong></p>
+            <ul>
+              <li id="ski-lift-li-1">
+                Operated and maintained ski lifts during peak winter seasons,
+                ensuring safety and efficiency for thousands of guests daily.
+              </li>
+              <li id="ski-lift-li-2">
+                Provided exceptional guest service, addressing any concerns
+                promptly to enhance the overall resort experience.
+              </li>
+              <li id="ski-lift-li-3">
+                Coordinated with lift operators, maintenance team, and ski
+                patrol to ensure guest safety.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="skills" class="skills">
+          <h2 id="skills-title">Skills</h2>
+
+          <div class="skills-category">
+            <h3 id="programming-languages">Programming Languages</h3>
+            <p>
+              Python, JavaScript, TypeScript, C, C++, C#, Go, Lua, R, Ruby,
+              Shell Script
             </p>
           </div>
 
-          <div class="project-item">
-            <h3 id="dccarpool-title">
-              University Car Sharing and Logistics Platform
-            </h3>
-            <p><strong>Jul 2021</strong></p>
-            <p id="dccarpool-description">
-              Developed a Ruby on Rails application to facilitate car sharing
-              among university students and staff, deployed on Heroku for
-              reliability and accessibility.
+          <div class="skills-category">
+            <h3 id="frontend-tech">Frontend Technologies</h3>
+            <p>
+              HTML5, CSS3, Bootstrap, Vue.js, React, React Native, Svelte,
+              Angular, Angular.js
             </p>
           </div>
-        </div>
+
+          <div class="skills-category">
+            <h3 id="backend-tech">Backend Technologies</h3>
+            <p>NodeJS, NestJS, Next JS, Django, Rails</p>
+          </div>
+
+          <div class="skills-category">
+            <h3 id="databases">Databases</h3>
+            <p>MySQL, Postgres, Firebase</p>
+          </div>
+
+          <div class="skills-category">
+            <h3 id="devops">DevOps & Cloud Platforms</h3>
+            <p>
+              AWS, Google Cloud, Heroku, Netlify, Nginx, Docker, Raspberry Pi,
+              Pi-Hole
+            </p>
+          </div>
+
+          <div class="skills-category">
+            <h3 id="machine-learning">Machine Learning & Data Science</h3>
+            <p>
+              Anaconda, Pandas, NumPy, Matplotlib, PyTorch, scikit-learn, Scipy,
+              TensorFlow
+            </p>
+          </div>
+
+          <div class="skills-category">
+            <h3 id="version-control">Version Control & CI/CD</h3>
+            <p>Git, GitHub, GitHub Actions</p>
+          </div>
+
+          <div class="skills-category">
+            <h3 id="tools">Tools & Frameworks</h3>
+            <p>Vim, LaTeX, Markdown, JWT, NPM, .Net</p>
+          </div>
+        </section>
       </div>
-    </section>
-
-    <section id="skills" class="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Git, GitHub, Docker, Linux, AWS, Google Cloud, Heroku</li>
-        <li>React, Vue, Svelte, Angular, Ruby on Rails</li>
-        <li>
-          SQL, JavaScript, TypeScript, HTML/CSS, Python, C#, C, Bash, Ruby, R,
-          lua, go
-        </li>
-        <li>Languages: Spanish (Native), English (C1)</li>
-      </ul>
-    </section>
-
-    <section id="coursework" class="coursework">
-      <h2 id="university-classes">Relevant Coursework</h2>
-      <ul>
-        <li id="data-structures-and-algorithm">
-          Data Structures and Algorithms
-        </li>
-        <li id="operating-systems">Operating Systems & Networks</li>
-        <li id="databases">Database Management Systems</li>
-        <li id="software-engineer">Software Engineering</li>
-        <li id="web">Web Technologies and Applications</li>
-        <li id="software-architecture">Architecture of Software Systems</li>
-        <li id="computer-architecture">Computer Architecture</li>
-        <li id="distributed-systems">Distributed Systems</li>
-        <li id="advanced-web">Advanced Web Applications</li>
-        <li id="recommender-systems">Recommender Systems</li>
-        <li id="logic">Logic for Computer Science</li>
-        <li id="automata">Theory of Automatas</li>
-        <li id="discrete-math">Discrete Mathematics</li>
-        <li id="testing">Testing</li>
-        <li id="gpti">Information Technology Project Management</li>
-        <li id="capstone">Capstone: Especialty Project</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2 id="contact-me">Contact Me</h2>
-      <p id="email-me">
-        Email me at <a href="mailto:aiherrera1@uc.cl">aiherrera1@uc.cl</a>
-      </p>
-      <p id="phone">Phone: +56 9 6844 1857</p>
-    </section>
-
-    <footer>
-      <p>&copy; 2024 Agustin's Portfolio. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+    </div>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
