@@ -234,16 +234,17 @@ export const elements = [
     es: "Creé un contador de cartas de blackjack utilizando Python y teoría de probabilidad para actualizar la estrategia de juego perfecta basada en las cartas restantes en la baraja.",
   },
 
-  { id: "portfolio-title",
+  {
+    id: "portfolio-title",
     en: "Personal Portfolio",
     es: "Portafolio Personal",
   },
 
-  { id: "portfolio-description", 
+  {
+    id: "portfolio-description",
     en: "Designed and developed a personal portfolio to showcase my projects, skills, and experience. Built with HTML, CSS, and JavaScript, and hosted in GitHub Pages for ccessible viewing.",
     es: "Diseñé y desarrollé un portafolio personal para mostrar mis proyectos, habilidades y experiencia. Construido con HTML, CSS y JavaScript, y alojado en GitHub Pages para una visualización accesible.",
-
-
+  },
   { id: "skills-title", en: "Skills", es: "Habilidades" },
   {
     id: "programming-languages",
