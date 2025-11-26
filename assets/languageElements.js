@@ -15,8 +15,8 @@ export const elements = [
   { id: "hero-title", en: "Hello, I'm Agustin", es: "Hola, soy Agustín" },
   {
     id: "hero-description",
-    en: "Software Engineer with a passion for building web applications and solving complex problems.",
-    es: "Ingeniero de Software apasionado por desarrollar aplicaciones web y resolver problemas complejos.",
+    en: "DevOps Engineer with a passion for building resilient, automated infrastructure and solving complex cloud challenges.",
+    es: "Ingeniero DevOps apasionado por construir infraestructura resiliente y automatizada, y resolver desafíos complejos en la nube.",
   },
   { id: "about-title", en: "About Me", es: "Sobre Mí" },
   { id: "education-title", en: "Education", es: "Educación" },
@@ -111,13 +111,38 @@ export const elements = [
 
   {
     id: "about-description",
-    en: "I’ve been a Linux user for 4 years, and I’m passionate about open-source software. I love customizing my workflow with Vim and mechanical keyboards. When I'm not coding, I'm diving deep into new technologies or optimizing my development environment.",
-    es: "He sido usuario de Linux durante 4 años, y me apasiona el software de código abierto. Me encanta personalizar mi flujo de trabajo con Vim y teclados mecánicos. Cuando no estoy programando, me sumerjo en nuevas tecnologías o optimizo mi entorno de desarrollo.",
+    en: "With 6 years of experience as a Linux user, I am passionate about open-source software and optimizing development environments. I am actively developing my skills in solutions architecture, leveraging tools like Terraform and Ansible to build robust, automated infrastructure.",
+    es: "Con 6 años de experiencia como usuario de Linux, me apasiona el software de código abierto y la optimización de entornos de desarrollo. Estoy desarrollando activamente mis habilidades en arquitectura de soluciones, aprovechando herramientas como Terraform y Ansible para construir infraestructura robusta y automatizada.",
   },
   {
     id: "work-experience-title",
     en: "Work Experience",
     es: "Experiencia Laboral",
+  },
+  {
+    id: "diio-title",
+    en: "DevOps Engineer - Diio, Santiago, Chile",
+    es: "Ingeniero DevOps - Diio, Santiago, Chile",
+  },
+  {
+    id: "diio-li-1",
+    en: "Automated infrastructure provisioning and management using Terraform and Ansible to deploy and maintain a highly available, self-healing Elasticsearch cluster.",
+    es: "Automatización del aprovisionamiento y gestión de infraestructura con Terraform y Ansible para desplegar y mantener un clúster de Elasticsearch altamente disponible y auto-reparable.",
+  },
+  {
+    id: "diio-li-2",
+    en: "Designed and implemented CI/CD pipelines for various applications on AWS.",
+    es: "Diseño e implementación de pipelines CI/CD para diversas aplicaciones en AWS.",
+  },
+  {
+    id: "diio-li-3",
+    en: "Developed a multi-tenant solution using PostgreSQL and Citus for scalable data management.",
+    es: "Desarrollo de una solución multi-inquilino utilizando PostgreSQL y Citus para una gestión de datos escalable.",
+  },
+  {
+    id: "diio-li-4",
+    en: "Worked on solutions architecture to improve scalability and reliability of the systems.",
+    es: "Trabajo en arquitectura de soluciones para mejorar la escalabilidad y fiabilidad de los sistemas.",
   },
   {
     id: "lolocar-title",
@@ -167,8 +192,8 @@ export const elements = [
   },
   {
     id: "ruuf-description",
-    en: "Developed a full-stack application for Ruuf to monitor and analyze energy usage. Served as backend administrator, managing server-side logic and database integration.",
-    es: "Desarrollé una aplicación full-stack para Ruuf para monitorear y analizar el uso de energía. Actué como administrador de backend, gestionando la lógica del servidor y la integración de la base de datos.",
+    en: "Developed a comprehensive full-stack application for Ruuf, enabling real-time energy usage monitoring and advanced analytics. My role as backend administrator involved provisioning an EC2 instance to host the backend, designing robust server-side logic, and optimizing database integration for enhanced performance and scalability.",
+    es: "Desarrollé una aplicación full-stack integral para Ruuf, permitiendo el monitoreo en tiempo real del uso de energía y análisis avanzados. Mi rol como administrador de backend incluyó el aprovisionamiento de una instancia EC2 para alojar el backend, el diseño de una lógica robusta del lado del servidor y la optimización de la integración de la base de datos para un rendimiento y escalabilidad mejorados.",
   },
   {
     id: "recommendation-title",
@@ -198,8 +223,8 @@ export const elements = [
   },
   {
     id: "docker-description",
-    en: "Containerized a full-stack application with Docker Compose and deployed it on AWS, demonstrating scalable deployment and management of services in a cloud environment.",
-    es: "Contenericé una aplicación full-stack con Docker Compose y la desplegué en AWS, demostrando el despliegue escalable y la gestión de servicios en un entorno en la nube.",
+    en: "Successfully containerized a full-stack application using Docker Compose and deployed it on AWS, demonstrating proficiency in scalable cloud deployments and efficient service management within a robust cloud environment.",
+    es: "Contenericé con éxito una aplicación full-stack utilizando Docker Compose y la desplegué en AWS, demostrando competencia en despliegues escalables en la nube y gestión eficiente de servicios dentro de un entorno de nube robusto.",
   },
   {
     id: "video-game-title",
@@ -262,6 +287,11 @@ export const elements = [
     id: "devops",
     en: "DevOps & Cloud Platforms",
     es: "DevOps y Plataformas en la Nube",
+  },
+  {
+    id: "devops-skills",
+    en: "AWS, Google Cloud, Heroku, Netlify, Nginx, Docker, Raspberry Pi, Pi-Hole, Terraform, Ansible",
+    es: "AWS, Google Cloud, Heroku, Netlify, Nginx, Docker, Raspberry Pi, Pi-Hole, Terraform, Ansible",
   },
   {
     id: "Machine Learning",
