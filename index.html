@@ -3,404 +3,375 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Agustin Herrera</title>
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <title>Agustín Herrera — DevOps Engineer</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="actions">
-      <button id="language-toggle" aria-label="Change Language">
-        <img
-          id="language-toggle-image"
-          src="assets/img/chile.png"
-          alt="Flag of Chile"
-        />
-      </button>
-    </div>
-    <div class="page">
-      <div class="left">
-        <div class="upper-left">
-          <section class="hero">
-            <div class="hero-content">
-              <img
-                src="assets/img/profile.png"
-                alt="Agustin Herrera"
-                id="hero-image"
-              />
-              <h1 id="hero-name">Agustin Herrera</h1>
 
-              <p id="hero-description">
-                DevOps Engineer with a passion for building resilient, automated infrastructure and solving complex cloud challenges.
-              </p>
-              <div class="hero-links">
-                <div class="media-links">
-                  <a
-                    href="https://github.com/aiherrera1"
-                    target="_blank"
-                    aria-label="GitHub"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://linkedin.com/in/agustin-herrera-r"
-                    target="_blank"
-                    aria-label="LinkedIn"
-                  >
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                  <a
-                    href="assets/cv/agustin-herrera-resume-en.pdf"
-                    download
-                    aria-label="Download Resume"
-                  >
-                    <i class="fas fa-file-download" alt="hola"></i>
-                  </a>
-                </div>
-                <a href="mailto:aiherrera1@uc.cl" aria-label="Email">
-                  <i class="fas fa-envelope"></i>
-                  <p>aiherrera1@uc.cl</p>
-                </a>
-                <a href="tel:+56968441857" aria-label="Phone">
-                  <i class="fas fa-phone"></i>
-                  <p>+56 9 6844 1857</p>
-                </a>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <a href="#hero" class="nav-brand">AH</a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" id="about-link">About</a></li>
+        <li><a href="#experience" id="experience-link">Experience</a></li>
+        <li><a href="#skills" id="skills-link">Skills</a></li>
+        <li><a href="#projects" id="projects-link">Projects</a></li>
+        <li><a href="#contact" id="contact-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="language-toggle" aria-label="Change Language">
+          <img id="language-toggle-image" src="assets/img/chile.png" alt="Flag of Chile" />
+        </button>
+        <a href="assets/cv/agustin-herrera-resume-en.pdf" download id="download-resume" class="btn-resume">
+          <i class="fas fa-download"></i>
+          <span id="resume-link">Resume</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <img src="assets/img/profile.jpg" alt="Agustín Herrera" class="hero-avatar" />
+        <p class="hero-greeting" id="hero-title">Hello, I'm</p>
+        <h1 class="hero-name">Agustín Herrera</h1>
+        <p class="hero-role">DevOps / Software Development Engineer</p>
+        <p class="hero-description" id="hero-description">
+          Computer Science Engineer with 2+ years designing scalable distributed systems on AWS. Building ML inference pipelines, multi-agent AI applications, and automated cloud infrastructure.
+        </p>
+        <div class="hero-actions">
+          <a href="#experience" class="btn-primary" id="btn-view-work">View My Work</a>
+          <a href="#contact" class="btn-secondary" id="btn-get-in-touch">Get In Touch</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/aiherrera1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/agustin-herrera-r" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:aiherrera1@uc.cl" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <a href="#about" class="hero-scroll" aria-label="Scroll down">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title" id="about-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p id="about-description">
+              Computer Science Engineer from Pontificia Universidad Católica de Chile with 2+ years of professional experience designing and operating scalable distributed systems on AWS. I've built ML inference pipelines, multi-step orchestration workflows, multi-agent AI applications, and full-stack systems. Passionate about generative AI and cloud-native architecture.
+            </p>
+            <div class="about-details">
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Santiago, Chile · Open to Relocation</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>B.S. Computer Science Engineering — PUC Chile</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-briefcase"></i>
+                <span>DevOps / SDE at diio</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-language"></i>
+                <span>Spanish (Native) · English (C2 – Proficient)</span>
               </div>
             </div>
-          </section>
-
-          <div class="left-right">
-            <section id="about" class="about div2">
-              <h2 id="about-title">About Me</h2>
-              <div class="about-content">
-                <p id="about-description">
-                  With 6 years of experience as a Linux user, I am passionate about open-source software and optimizing development environments. I am actively developing my skills in solutions architecture, leveraging tools like Terraform and Ansible to build robust, automated infrastructure.
-                </p>
-              </div>
-            </section>
-
-            <!-- Education Section -->
-            <section id="education" class="education div3">
-              <h2 id="education-title">Education</h2>
-              <div class="education-item">
-                <h3 id="university-name">
-                  Pontificia Universidad Católica de Chile
-                </h3>
-                <p id="university-title">
-                  Bachelor in Engineering (Expected Jul 2025)
-                </p>
+          </div>
+          <div class="education-card reveal">
+            <h3 id="education-title">Education</h3>
+            <div class="edu-item">
+              <div class="edu-logo">PUC</div>
+              <div class="edu-details">
+                <h4 id="university-name">Pontificia Universidad Católica de Chile</h4>
+                <p class="edu-degree" id="university-title">B.S. in Computer Science Engineering — Dec 2024</p>
                 <p id="university-major">Major: Software Engineering</p>
-                <p id="university-minor">
-                  Minor: Scientific and Technological Foundations of Computing
-                </p>
+                <p id="university-minor">Minor: Scientific & Technological Foundations of Computing</p>
               </div>
-            </section>
-            <section id="coursework" class="coursework div14">
-              <h2 id="university-classes">Relevant Coursework</h2>
-              <div class="coursework-list">
-                <div id="data-structures-and-algorithm">
-                  Data Structures and Algorithms
-                </div>
-                <div id="operating-systems">Operating Systems & Networks</div>
-                <div id="databases">Database Management Systems</div>
-                <div id="software-engineer">Software Engineering</div>
-                <div id="web">Web Technologies and Applications</div>
-                <div id="software-architecture">
-                  Architecture of Software Systems
-                </div>
-                <div id="computer-architecture">Computer Architecture</div>
-                <div id="distributed-systems">Distributed Systems</div>
-                <div id="advanced-web">Advanced Web Design</div>
-                <div id="recommender-systems">Recommender Systems</div>
-                <div id="vis-info">Visualization of Information</div>
-                <div id="ai">Artificial Intelligence</div>
-                <div id="logic">Logic for Computer Science</div>
-                <div id="automata">Theory of Automata</div>
-                <div id="discrete-math">Discrete Mathematics</div>
-                <div id="testing">Testing</div>
-                <div id="gpti">Information Technology Project Management</div>
-                <div id="capstone">Capstone: Specialty Project</div>
-                <div id="daa">Design and Analysis of Algorithms</div>
-              </div>
-            </section>
+            </div>
           </div>
         </div>
-        <section id="projects" class="project-section-all div13">
-          <h2 id="projects-title">Projects</h2>
-          <div class="projects">
-            <div class="project-item">
-              <h3 id="ruuf-title">Full-Stack Energy Monitoring App for Ruff</h3>
-              <div class="project-description">
-                <p><strong>Sep 2024</strong></p>
-                <p id="ruuf-description">
-                  Developed a comprehensive full-stack application for Ruuf, enabling real-time energy usage monitoring and advanced analytics. My role as backend administrator involved provisioning an EC2 instance to host the backend, designing robust server-side logic, and optimizing database integration for enhanced performance and scalability.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://two024-2-s1-grupo3-web.onrender.com"
-                  target="_blank"
-                  class="project-link"
-                  ><i class="fas fa-globe"></i>Live Demo</a
-                >
-              </div>
-            </div>
-            <!-- <div class="project-item"> -->
-            <!--   <h3 id="recommendation-title">Recommendation Engine</h3> -->
-            <!--   <div class="project-description"> -->
-            <!--     <p><strong>May 2024</strong></p> -->
-            <!--     <p id="recommendation-description"> -->
-            <!--       Built a recommendation system using Python and machine -->
-            <!--       learning to suggest recipes based on user preferences and -->
-            <!--       dietary needs. -->
-            <!--     </p> -->
-            <!--   </div> -->
-            <!--   <div class="project-links"> -->
-            <!--     <a -->
-            <!--       href="https://github.com/aiherrera1/recommendation-system-for-recipes" -->
-            <!--       target="_blank" -->
-            <!--       class="project-link" -->
-            <!--       ><i class="fab fa-github"></i>GitHub</a -->
-            <!--     > -->
-            <!--   </div> -->
-            <!-- </div> -->
-            <div class="project-item">
-              <h3 id="docker-title">Containerized Application Deployment</h3>
-              <div class="project-description">
-                <p><strong>Jul 2022</strong></p>
-                <p id="docker-description">
-                  Successfully containerized a full-stack application using Docker Compose and deployed it on AWS, demonstrating proficiency in scalable cloud deployments and efficient service management within a robust cloud environment.
-                </p>
-              </div>
-              <div class="project-links">
-                <!-- <a href="" target="_blank" class="project-link" -->
-                <!--   ><i class="fab fa-github"></i>GitHub</a -->
-                <!-- > -->
-                <!-- <a href="" target="_blank" class="project-link" -->
-                <!--   ><i class="fas fa-globe"></i>Live Demo</a -->
-                <!-- > -->
-              </div>
-            </div>
-            <div class="project-item">
-              <h3 id="video-game-title">Multiplayer Video Game Development</h3>
-              <div class="project-description">
-                <p><strong>Nov 2022</strong></p>
-                <p id="video-game-description">
-                  Created a multiplayer video game using React for the frontend
-                  and PostgreSQL for backend deployment. Hosted on Heroku and
-                  Netlify for an interactive gaming experience.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/aiherrera1/dcconquer"
-                  target="_blank"
-                  class="project-link"
-                  ><i class="fab fa-github"></i>GitHub</a
-                >
-              </div>
-              <!-- <a href="" target="_blank" class="project-link">Live Demo</a> -->
-            </div>
-            <div class="project-item">
-              <h3 id="dccarpool-title">
-                University Car Sharing and Logistics Platform
-              </h3>
-              <div class="project-description">
-                <p><strong>Jul 2021</strong></p>
-                <p id="dccarpool-description">
-                  Developed a Ruby on Rails application to facilitate car
-                  sharing among university students and staff, deployed on
-                  Heroku for reliability and accessibility.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/aiherrera1/carpool-rails"
-                  target="_blank"
-                  class="project-link"
-                  ><i class="fab fa-github"></i>GitHub</a
-                >
-                <!-- <a href="" target="_blank" class="project-link" -->
-                <!--   ><i class="fas fa-globe"></i>Live Demo</a -->
-                <!-- > -->
-              </div>
-            </div>
-
-            <div class="project-item">
-              <h3 id="blackjack-cardcounter">Blackjack Card Counter</h3>
-              <div class="project-description">
-                <p><strong>Jul 2020</strong></p>
-                <p id="blackjack-cardcounter-desc">
-                  Created a blackjack card counter using Python and probability
-                  theory to update the perfect play strategy based on the
-                  remaining cards in the deck.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/aiherrera1/blackjack-card-counter"
-                  target="_blank"
-                  class="project-link"
-                  ><i class="fab fa-github"></i>GitHub</a
-                >
-              </div>
-            </div>
-
-            <div class="project-item">
-              <h3 id="portfolio-title">Personal Portfolio</h3>
-              <div class="project-description">
-                <p><strong>Nov 2024</strong></p>
-                <p id="portfolio-description">
-                  Designed and developed a personal portfolio to showcase my
-                  projects, skills, and experience. Built with HTML, CSS, and
-                  JavaScript, and hosted in GitHub Pages for ccessible viewing.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/aiherrera1/my-portfolio"
-                  target="_blank"
-                  class="project-link"
-                  ><i class="fab fa-github"></i>GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
-      <div class="right">
-        <!-- Experience Section -->
-        <section id="experience" class="experience div11">
-          <h2 id="work-experience-title">Work Experience</h2>
-          <div class="job">
-            <h3 id="diio-title">
-              DevOps Engineer -
-              <a href="https://diio.io">Diio</a>, Santiago, Chile
-            </h3>
-            <p><strong>Dec 2024 – Present</strong></p>
-            <ul>
-              <li id="diio-li-1">
-                Automated infrastructure provisioning and management using Terraform and Ansible to deploy and maintain a highly available, self-healing Elasticsearch cluster.
-              </li>
-              <li id="diio-li-2">
-                Designed and implemented CI/CD pipelines for various applications on AWS.
-              </li>
-              <li id="diio-li-3">
-                Developed a multi-tenant solution using PostgreSQL and Citus for scalable data management.
-              </li>
-              <li id="diio-li-4">
-                Worked on solutions architecture to improve scalability and reliability of the systems.
-              </li>
-            </ul>
-          </div>
-          <div class="job">
-            <h3 id="lolocar-title">
-              Software Engineering Intern -
-              <a href="https://lolocar.com">Lolocar.com</a>, Santiago, Chile
-            </h3>
-            <p><strong>Aug 2023 – Dec 2023</strong></p>
-            <ul>
-              <li id="lolocar-li-1">
-                Engineered robust and scalable RESTful APIs to accurately
-                compute toll charges owed by renters, ensuring seamless
-                integration with existing systems and improving operational
-                efficiency.
-              </li>
-              <li id="lolocar-li-2">
-                Architected and implemented sophisticated admin panels for
-                internal use, enhancing user experience and enabling real-time
-                data management.
-              </li>
-              <li id="lolocar-li-3">
-                Led deployment of applications on Google Cloud Services,
-                optimizing performance and improving deployment speed and
-                reliability by 20%.
-              </li>
-            </ul>
-          </div>
-          <div class="job">
-            <h3 id="ski-lift-title">Ski Lift Operator - Vail Keystone, CO</h3>
-            <p><strong>Dec – Mar 2021, 2022, 2023</strong></p>
-            <ul>
-              <li id="ski-lift-li-1">
-                Operated and maintained ski lifts during peak winter seasons,
-                ensuring safety and efficiency for thousands of guests daily.
-              </li>
-              <li id="ski-lift-li-2">
-                Provided exceptional guest service, addressing any concerns
-                promptly to enhance the overall resort experience.
-              </li>
-              <li id="ski-lift-li-3">
-                Coordinated with lift operators, maintenance team, and ski
-                patrol to ensure guest safety.
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section id="skills" class="skills">
-          <h2 id="skills-title">Skills</h2>
+    </section>
 
-          <div class="skills-category">
-            <h3 id="programming-languages">Programming Languages</h3>
-            <p>
-              Python, JavaScript, TypeScript, C, C++, C#, Go, Lua, R, Ruby,
-              Shell Script
-            </p>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" id="work-experience-title">Work Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="job-header">
+                <div class="job-header-text">
+                  <h3 id="diio-title">DevOps / Software Development Engineer</h3>
+                  <p class="job-company">
+                    <a href="https://diio.com" target="_blank">diio</a>
+                    <span class="job-location">· Santiago, Chile</span>
+                  </p>
+                </div>
+                <span class="job-date">Dec 2024 – Present</span>
+              </div>
+              <ul class="job-bullets">
+                <li id="diio-li-1">Architected an end-to-end <strong>ML inference pipeline</strong> for audio transcription and speaker diarization orchestrating <strong>AWS Step Functions, Lambda, SQS, ECS, and S3</strong> — replaced a third-party vendor and <strong>cut costs by 60%</strong>.</li>
+                <li id="diio-li-4">Implemented <strong>dynamic ECS Sidekiq auto-scaling</strong> via CloudWatch alarms triggered by real-time queue depth metrics, reducing compute costs without sacrificing throughput.</li>
+                <li id="diio-li-5">Designed an <strong>observability stack</strong> with CloudWatch, Prometheus, and Grafana (EC2-hosted), enabling proactive incident detection across the production environment.</li>
+                <li id="diio-li-6">Migrated production database from <strong>RDS PostgreSQL to distributed Citus</strong>, enabling horizontal scaling and improving analytical query performance by <strong>10%</strong>.</li>
+                <li id="diio-li-7">Optimized <strong>CI/CD pipelines</strong> with GitHub Actions through parallelization, build caching, and matrix builds — reduced deployment time by <strong>50%</strong>.</li>
+                <li id="diio-li-8">Built an AI-powered nightly <strong>security scanning pipeline</strong> on on-premise NVIDIA Jetson hardware that auto-opens PRs with LLM-generated vulnerability fixes and justifications.</li>
+              </ul>
+              <div class="job-tags">
+                <span>AWS</span><span>Step Functions</span><span>ECS</span><span>Lambda</span>
+                <span>Vertex AI</span><span>RAG</span><span>Elasticsearch</span><span>GitHub Actions</span>
+                <span>Prometheus</span><span>Grafana</span><span>Citus</span>
+              </div>
+            </div>
           </div>
 
-          <div class="skills-category">
-            <h3 id="frontend-tech">Frontend Technologies</h3>
-            <p>
-              HTML5, CSS3, Bootstrap, Vue.js, React, React Native, Svelte,
-              Angular, Angular.js
-            </p>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="job-header">
+                <div class="job-header-text">
+                  <h3 id="lolocar-title">Software Development Engineer</h3>
+                  <p class="job-company">
+                    <a href="https://lolocar.com" target="_blank">Lolocar.com</a>
+                    <span class="job-location">· Santiago, Chile</span>
+                  </p>
+                </div>
+                <span class="job-date">Aug – Dec 2023</span>
+              </div>
+              <ul class="job-bullets">
+                <li id="lolocar-li-1">Developed scalable <strong>RESTful APIs</strong> for tenant toll-charge calculation, integrated with existing backend systems using <strong>Ruby on Rails</strong>.</li>
+                <li id="lolocar-li-2">Designed and implemented internal <strong>admin dashboards</strong> for real-time data management, improving operational efficiency for the ops team.</li>
+                <li id="lolocar-li-3">Led application deployment to <strong>Google Cloud Platform</strong>, improving deployment reliability and speed by <strong>20%</strong>.</li>
+              </ul>
+              <div class="job-tags">
+                <span>Ruby on Rails</span><span>GCP</span><span>REST APIs</span><span>PostgreSQL</span>
+              </div>
+            </div>
           </div>
 
-          <div class="skills-category">
-            <h3 id="backend-tech">Backend Technologies</h3>
-            <p>NodeJS, NestJS, Next JS, Django, Rails</p>
-          </div>
-
-          <div class="skills-category">
-            <h3 id="databases">Databases</h3>
-            <p>MySQL, Postgres, Firebase</p>
-          </div>
-
-          <div class="skills-category">
-            <h3 id="devops">DevOps & Cloud Platforms</h3>
-            <p>
-              AWS, Google Cloud, Heroku, Netlify, Nginx, Docker, Raspberry Pi,
-              Pi-Hole, Terraform, Ansible
-            </p>
-          </div>
-
-          <div class="skills-category">
-            <h3 id="machine-learning">Machine Learning & Data Science</h3>
-            <p>
-              Anaconda, Pandas, NumPy, Matplotlib, PyTorch, scikit-learn, Scipy,
-              TensorFlow
-            </p>
-          </div>
-
-          <div class="skills-category">
-            <h3 id="version-control">Version Control & CI/CD</h3>
-            <p>Git, GitHub, GitHub Actions</p>
-          </div>
-
-          <div class="skills-category">
-            <h3 id="tools">Tools & Frameworks</h3>
-            <p>Vim, LaTeX, Markdown, JWT, NPM, .Net</p>
-          </div>
-        </section>
+        </div>
       </div>
-    </div>
-    <script type="module" src="script.js"></script>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title" id="skills-title">Technical Skills</h2>
+        <div class="skills-grid">
+
+          <div class="skill-category reveal">
+            <h3 id="programming-languages"><i class="fas fa-code"></i> Languages</h3>
+            <div class="skill-tags">
+              <span>Python</span><span>TypeScript</span><span>JavaScript</span>
+              <span>Go</span><span>Ruby</span><span>Bash</span><span>Java</span><span>C/C++</span><span>R</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 id="devops"><i class="fab fa-aws"></i> Cloud & Infrastructure</h3>
+            <div class="skill-tags">
+              <span>AWS EC2</span><span>ECS/ECR</span><span>Lambda</span><span>Step Functions</span>
+              <span>SQS</span><span>S3</span><span>CloudWatch</span><span>RDS</span><span>IAM</span>
+              <span>Docker</span><span>GCP</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 id="ai-ml"><i class="fas fa-robot"></i> AI / ML & Agents</h3>
+            <div class="skill-tags">
+              <span>Multi-agent Systems</span><span>Vertex AI</span><span>RAG Pipelines</span>
+              <span>OpenAI Embeddings</span><span>BM25 + KNN Search</span><span>LLM Automation</span><span>MCP</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 id="observability-title"><i class="fas fa-chart-line"></i> Observability</h3>
+            <div class="skill-tags">
+              <span>Prometheus</span><span>Grafana</span><span>CloudWatch</span><span>ECS Auto-scaling</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 id="version-control"><i class="fas fa-infinity"></i> CI/CD & DevOps</h3>
+            <div class="skill-tags">
+              <span>GitHub Actions</span><span>Linux</span><span>Bash Scripting</span>
+              <span>Terraform</span><span>Ansible</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 id="backend-tech"><i class="fas fa-server"></i> Backend & Frameworks</h3>
+            <div class="skill-tags">
+              <span>Ruby on Rails</span><span>Nest.js</span><span>Next.js</span>
+              <span>React</span><span>Vue</span><span>Svelte</span><span>Angular</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 id="databases"><i class="fas fa-database"></i> Databases & Search</h3>
+            <div class="skill-tags">
+              <span>PostgreSQL</span><span>Citus</span><span>Redis</span>
+              <span>Elasticsearch</span><span>MySQL</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" id="projects-title">Projects</h2>
+        <div class="projects-grid">
+
+          <div class="project-card reveal">
+            <div class="project-card-header">
+              <i class="fas fa-solar-panel project-icon"></i>
+              <div class="project-links-top">
+                <a href="https://two024-2-s1-grupo3-web.onrender.com" target="_blank" aria-label="Live Demo" title="Live Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <h3 id="ruuf-title">Full-Stack Energy Monitoring App</h3>
+            <p class="project-meta">Sep 2024 · Ruuf</p>
+            <p id="ruuf-description">Led backend development for a real-time energy monitoring app. Provisioned EC2, designed REST APIs, and optimized database integration for performance and scalability.</p>
+            <div class="project-tech">
+              <span>Nest.js</span><span>PostgreSQL</span><span>AWS EC2</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-card-header">
+              <i class="fas fa-gamepad project-icon"></i>
+              <div class="project-links-top">
+                <a href="https://github.com/aiherrera1/dcconquer" target="_blank" aria-label="GitHub" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 id="video-game-title">Real-Time Multiplayer Game</h3>
+            <p class="project-meta">Nov 2022</p>
+            <p id="video-game-description">Interactive multiplayer game with real-time state synchronization across clients. Built with React/Next.js and PostgreSQL, hosted on Heroku and Netlify.</p>
+            <div class="project-tech">
+              <span>React</span><span>Next.js</span><span>PostgreSQL</span><span>Heroku</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-card-header">
+              <i class="fab fa-docker project-icon"></i>
+              <div class="project-links-top"></div>
+            </div>
+            <h3 id="docker-title">Containerized App Deployment</h3>
+            <p class="project-meta">Jul 2022</p>
+            <p id="docker-description">Containerized a full-stack application using Docker Compose and deployed on AWS, demonstrating proficiency in scalable cloud deployments and service orchestration.</p>
+            <div class="project-tech">
+              <span>Docker</span><span>Docker Compose</span><span>AWS</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-card-header">
+              <i class="fas fa-car project-icon"></i>
+              <div class="project-links-top">
+                <a href="https://github.com/aiherrera1/carpool-rails" target="_blank" aria-label="GitHub" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 id="dccarpool-title">University Car Sharing Platform</h3>
+            <p class="project-meta">Jul 2021</p>
+            <p id="dccarpool-description">Ruby on Rails application to facilitate car sharing among university students and staff, deployed on Heroku for reliability and accessibility.</p>
+            <div class="project-tech">
+              <span>Ruby on Rails</span><span>PostgreSQL</span><span>Heroku</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-card-header">
+              <i class="fas fa-dice project-icon"></i>
+              <div class="project-links-top">
+                <a href="https://github.com/aiherrera1/blackjack-card-counter" target="_blank" aria-label="GitHub" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 id="blackjack-cardcounter">Blackjack Card Counter</h3>
+            <p class="project-meta">Jul 2020</p>
+            <p id="blackjack-cardcounter-desc">Card counter using Python and probability theory to dynamically update optimal play strategy based on remaining cards in the deck.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Probability Theory</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-card-header">
+              <i class="fas fa-briefcase project-icon"></i>
+              <div class="project-links-top">
+                <a href="https://github.com/aiherrera1/my-portfolio" target="_blank" aria-label="GitHub" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 id="portfolio-title">Personal Portfolio</h3>
+            <p class="project-meta">Nov 2024</p>
+            <p id="portfolio-description">Designed and developed this personal portfolio to showcase projects, skills, and experience. Built with HTML, CSS, and JavaScript, hosted on GitHub Pages.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-container">
+        <h2 class="section-title" id="contact-title">Get In Touch</h2>
+        <p class="contact-subtitle">I'm currently open to new opportunities. Feel free to reach out!</p>
+        <div class="contact-links">
+          <a href="mailto:aiherrera1@uc.cl" class="contact-card reveal">
+            <i class="fas fa-envelope"></i>
+            <span>aiherrera1@uc.cl</span>
+          </a>
+          <a href="https://linkedin.com/in/agustin-herrera-r" target="_blank" class="contact-card reveal">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/aiherrera1" target="_blank" class="contact-card reveal">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="tel:+56968441857" class="contact-card reveal">
+            <i class="fas fa-phone"></i>
+            <span>+56 9 6844 1857</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Designed &amp; built by Agustín Herrera · Santiago, Chile</p>
+    </footer>
+
+    <script type="module" src="script.js" defer></script>
   </body>
 </html>
